@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACE Divino</title>
+    <link rel="shortcut icon" href="assets/images/ac.png" />
+    <link rel="stylesheet" href="assets/css/ace-divino.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/shortcodes.css" /> 
+     <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> 
+    <link rel="stylesheet" type="text/css" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" /> 
+
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel='stylesheet' id='rs-plugin-settings-css' href="assets/revolution/css/rs6.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style type="text/css">
+        .sidebar-contact {
+            z-index: 99999;
+            position: fixed;
+            top: 60%;
+            left: -350px;
+            transform: translateY(-50%);
+            width: 350px;
+            height: auto;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+        .sidebar-contact.active {
+            left: 0;
+        }
+
+        .sidebar-contact input,
+        .sidebar-contact textarea {
+            width: 100%;
+            height: 36px;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid rgba(0, 0, 0, .5);
+            outline: none;
+        }
+
+        .sidebar-contact h2 {
+            margin: 0 0 20px;
+            padding: 0;
+        }
+
+        .sidebar-contact textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        .sidebar-contact input[type="submit"] {
+            background: #00bcd4;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            font-size: 18px;
+        }
+
+        .toggle {
+            z-index: 99999;
+            position: absolute;
+            height: 48px;
+            width: 48px;
+            text-align: center;
+            cursor: pointer;
+            background: #f00;
+            top: 0;
+            right: -48px;
+            line-height: 48px;
+        }
+
+        .toggle:before {
+            content: '\f003';
+            font-family: fontAwesome;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .toggle.active:before {
+            content: '\f00d';
+        }
+
+        @media(max-width:768px) {
+            .sidebar-contact {
+                width: 100%;
+                height: 100%;
+                left: -100%;
+            }
+
+            .sidebar-contact .toggle {
+                top: 50%;
+                transform: translateY(-50%);
+                transition: 0.5s;
+            }
+
+            .sidebar-contact.active .toggle {
+                top: 0;
+                right: 0;
+                transform: translateY(0);
+            }
+
+            .scroll {
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+            }
+
+            .content {
+                padding: 50px 50px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.sidebar-contact').toggleClass('active')
+                $('.toggle').toggleClass('active')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!--page start-->
+    <div class="page">
+        <!--header start-->
+        <!--header start-->
+        <header id="masthead" class="header cmt-header-style-02 clearfix">
+            <!-- top_bar -->
+
+            <div id="site-header-menu" class="site-header-menu" style="background-color: #fff; ">
+                <div class="site-header-menu-inner cmt-stickable-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!--site-navigation -->
+                                <div class="site-navigation d-flex align-items-center justify-content-between">
+                                    <!-- site-branding -->
+                                    <div class="site-branding mr-auto">
+                                        <a class="home-link" href="/" rel="home">
+                                            <img id="logo-img" class="img-fluid auto_size" height="60" width="183"
+                                                src="assets/images/ac.png" alt="logo-img">
+                                        </a>
+                                    </div><!-- site-branding end -->
+                                    <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                        <span class="menubar-box">
+                                            <span class="menubar-inner"></span>
+                                        </span>
+                                    </div>
+                                    <!-- menu -->
+                                    <nav class="main-menu menu-mobile" id="menu">
+                                        <ul class="menu">
+                                            <li class="">
+                                                <a href="/">Home</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#overview">Overview</a>
+                                            </li>
+
+                                         
+                                            <li class="">
+                                           <a href="#price">Price List</a>
+                                            </li>
+                                        <li class="">
+                                               <a href="#site-plan">Site Plan</a>
+                                            </li>
+                                        
+                                        <li class="">
+                                               <a href="#amenities">Amenities</a>
+                                            </li>
+                                        <li class="">
+                                               <a href="#gallery">Gallery</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#contact">contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="header_extra d-flex flex-row align-items-center justify-content-end">
+                                        <div class="header_btn">
+                                            <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-fill cmt-icon-btn-right cmt-btn-color-highlight"
+                                                href="tel:+918178442618">+91 8178442618</a>
+                                        </div>
+
+                                    </div>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- site-header-menu end-->
+        </header> <!--header end-->
+
+        <!-- page-title -->
+        <div class="banner" >
+            <img src="assets/ace-divino-banner (Custom).jpg"class="img-fluid" alt="">
+            
+
+            <div class="col-lg-3 enquery-form">
+
+                <div class="right_form" style="text-align:center;">
+                    <!-- <img src="img/logo_gaursons.png" alt="logo Gaur City Center" style="max-width: 160px;"> -->
+                    <h4 class="text-light" style="PADDING: 11PX;">Yes, I am Interested</h4>
+    
+                    <form method="post" action="https://formsubmit.co/aceclusivehomes01@gmail.com" name="emf-form-1" id="emf-form-1" onsubmit="return validate();">
+                        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name" required=""></div>
+                        <div class="form-group">
+                              <input type="hidden" name="_autoresponse" value="thank you">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required=""></div>
+                              <input type="hidden" name="_subject" value="Ace divino!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html">
+    
+                        <div class="form-group"> <input type="number" name="phone" placeholder="Mobile" class="form-control" required=""></div>
+                        <div class="form-group"> <input type="text" name="desc" placeholder="I am Interested" class="form-control" value="I am Interested" required=""></div>
+    
+    
+                        <div class="text-center my-1"><input type="submit" class="btn btn-dark btn-block" value="SUBMIT" name="Send"></div>
+                    </form>
+                </div>
+    
+            </div>
+        </div><!-- page-title end-->
+
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <section class="overview" style="padding-top: 30px;" id="overview">
+                <div class="container-fluid">
+                    <div class="row">
+
+<div class="col-md-8">
+    <h2 class="title">ACE Divino Sector 1 Greater Noida West</h2>
+    <div class="title-desc">
+        <p>ACE Divino Sector 1 Greater Noida West is one of the most iconic projects of
+            Ace Group of India. For this project, many reputed Design Partners have come
+            together to bring this Exclusive Luxurious Dream Home into reality for the
+            residents and the investors. The Magnificent ACE Divino apartments are in
+            the finishing mode, and it is 'one of a kind.
+            This society consists of all the facilities and amenities to match the home
+            buyers' needs and requirements. The Developer is bringing the luxury project
+            in Greater Noida West to offer a luxurious lifestyle to the buyers and
+            investors. Visit the site and change your address of residence with ACE
+            Divino Sector 1 Greater Noida West.</p>
+            <h4>SITE LAYOUT</h4>
+            <p> A site Layout is also known as a 'site layout' it is a form of drawing used by
+                architects, landscape architects, and engineers to represent the desired conditions
+                for a specific area, usually a parcel of land that is to be altered.<br>
+                If we talk about the ACE Divino site layout, it spreads over 10.06 acres of area. In
+                fact, it has 70% Green landscape and its rest 30% will be used for Construction
+                according to Sustainable Lifestyle Living.</p>
+    </div>
+    <div class="pb-30">
+        <div class="row d-inline-block">
+            <div class="col d-inline">
+                <ul
+                    class="d-inline-block cmt-list cmt-list-style-icon cmt-list-icon-color-darkgrey">
+                    <li><i class="ti ti-check"></i><span
+                            class="cmt-list-li-content cmt-textcolor-darkgrey">Unique Glass
+                            Facade Towers</span></li>
+                    <li><i class="ti ti-check"></i><span
+                            class="cmt-list-li-content cmt-textcolor-darkgrey">Expansive 3
+                            Side Open Homes</span></li>
+                    <li class="pb-10"><i class="ti ti-check"></i><span
+                            class="cmt-list-li-content cmt-textcolor-darkgrey">Double -
+                            Height Entrance Lobbies</span></li>
+                </ul>
+            </div>
+            <div class="col d-inline">
+                <ul
+                    class="d-inline-block cmt-list cmt-list-style-icon cmt-list-icon-color-darkgrey">
+                    <li><i class="ti ti-check"></i><span
+                            class="cmt-list-li-content cmt-textcolor-darkgrey">Spacious 2 &
+                            3 Bed Residences</span></li>
+                    <li><i class="ti ti-check"></i><span
+                            class="cmt-list-li-content cmt-textcolor-darkgrey">Grand Retail
+                            Hub</span></li>
+                    <li class="pb-10"><i class="ti ti-check"></i><span
+                            class="cmt-list-li-content cmt-textcolor-darkgrey">Low Density
+                            Development</span></li>
+                </ul>
+            </div>
+          
+        </div>
+
+        <table width="100%" class="table table-bordered mt-10">
+            <h5 class="mt-15">PAYMENT PLAN (10:80:10)</h5>
+            <tbody>
+                <tr>
+                    <th>Booking Amount</th>
+                    
+                    <th>10%</th>
+                </tr>
+                <tr>
+                    <th>With in 30day</th> 
+                     <th>80%</th> 
+                    
+                </tr>
+                <tr>
+                    <th>At the time of Offer on Possession</th>
+                     <th>10% + other Charges</th> 
+                   
+                </tr>
+            </tbody>
+                        </table>
+    </div>
+
+</div>
+<div class="col-md-4">
+    <img src="assets/images/1.webp" height="84%" width="100%" class="" alt="">
+</div>
+ 
+                    </div>
+                </div>
+            </section>
+
+            <section class="price" id="price">
+                <div class="container">
+                    <h1 class="text-center">Price List</h1>
+                    <h6 class="text-center">ACE Divino Greater Noida West is offering 2/3 BHK luxurious apartments with ultra modern amenities. To purchase your dream home, you need not to wait more. A perfect destined place to invest to enjoy the luxury and get the amazing offers. Check out the ACE Divino Price List.</h6>
+
+                    <table width="100%" class="table table-bordered">
+                        <tbody>
+                           <tr>
+                           
+                               <th>INVENTRY TYPE</th>
+                               <th>SIZE (Sq.Ft.)</th>
+                               <th>PROPERTY TYPE</th>
+                                                        
+                               <th>PRICE* </th>
+                           </tr>
+                          
+                            <tr>
+                               <td>2 BHK + 2T</td>
+                                <td>1050 Sq.Ft.</td> 
+                               <td>Garden Floor Apartment</td>
+                                                        
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>2 BHK + 2T + Study</td>
+                               <td>1245 Sq.Ft.</td>
+                               <td>Garden Floor Apartment</td>
+                                                           
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>3 BHK + 3T</td>
+                               <td>1565 Sq.Ft.</td> 
+                               <td>Garden Floor Apartment</td>
+                                                         
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>4 BHK</td>
+                               <td>1875 Sq.Ft.
+                               </td>
+                               <td>( 1st - 10th) floor Apartment</td>
+                                                          
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>4 BHK</td>
+                               <td>1875 Sq.Ft.
+                               </td> 
+                               <td>( 11th ) floor Apartment Onwards</td>
+                                                         
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>3 BHK</td>
+                               <td>1750 Sq.Ft.
+                               </td>
+                               <td>Penthouse</td>
+                                                          
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>3 BHK</td>
+                               <td>1850 Sq.Ft.</td> 
+                               <td>Penthouse</td>
+                                                         
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>3 BHK</td>
+                                <td>2315 Sq.Ft.</td>
+                               <td>Penthouse</td>
+                                                         
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                           <tr>
+                               <td>4 BHK</td>
+                               <td>2790 Sq.Ft.</td>
+                               <td>Penthouse</td>
+                               
+                                                          
+                               <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                On Request
+                              </button></td>
+                           </tr>
+                       </tbody>
+                   </table>
+   
+
+     </div>
+     <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background: #141920;">
+
+
+                <h4 class="modal-title" style="color:#fff; text-align:center; width:100%;">Ace Divino Apartment</h4>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body inq-form">
+
+                <div class="right_form">
+                    <h3 style="text-align:center; color:black;">Yes , I am Interested
+                    </h3>
+
+                    <div class="frm_inner">
+                        <form action="https://formsubmit.co/aceclusivehomes01@gmail.com" method="post" name="emf-form-1-2" id="emf-form-1-2">
+                            <div class="form-group"><input type="text" name="name" id="qname" class="form-control" placeholder="Name" required=""></div>
+                            <input type="hidden" name="_subject" value="Ace divino!">
+                            <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <div class="form-group">
+                                  <input type="hidden" name="_autoresponse" value="thank you">
+                                <input type="email" name="email" id="qemail" class="form-control" placeholder="Email" required=""></div>
+                            <div class="form-group"> <input type="tel" name="phone" id="qphone" placeholder="Mobile" class="form-control" required=""></div>
+                            <div class="form-group"> <input type="text" name="desc" id="qdesc" placeholder="Hi, I am interested." class="form-control" required=""></div>
+                            <div class="text-center mt-1"><input type="submit" name="Send" class="btn btn-danger btn-block" value="SUBMIT"></div>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+  </div>
+            </section>
+            <section class="cmt-row services-section clearfix" style="background-color: #f1f1f1;" id="amenities">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-7 m-auto">
+                            <!-- section title -->
+                            <div class="section-title title-style-center_text mt-0 mb-15">
+                                <div class="title-header">
+                                    <!--<h3>GLOBALY RENOWNED & TRUSTED</h3>-->
+                                    <h2 class="title pt-3">Aminities</h2>
+                                </div>
+                            </div>
+                            <!-- section title end -->
+                        </div>
+                    </div><!-- row end -->
+                    <div class="row row-equal-height">
+                        <div class="col-lg-3 col-md-3  col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/Security.png">
+                                        <h3>24x 7 Manned Security</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/road.png">
+                                        <h3>Wide Roads</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/Parking.png">
+                                        <h3>Parking</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/park.png">
+                                        <h3>Green Park</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/Kids-Play-Area.png">
+                                        <h3>Kids Play Area</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="featured-icon-box icon-align-before-content style8">
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/Open-Lawns.png">
+                                        <h3>Vaastu Friendly Layout</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/Jogging-Track.png">
+                                        <h3>Jogging Tracks</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="featured-icon-box icon-align-before-content style8">
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <img src="assets/images/client/Open-Lawns.png">
+                                        <h3>Open Lawns</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services-section end -->
+            <!--intro-section end-->
+            <section class="cmt-row tab-section clearfix my-4" style="padding:10px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-7 m-auto">
+                            <!-- section title -->
+                            <div class="section-title text-center mt-0">
+                                <div class="title-header pb-0">
+                                    <h2 class="title">ACE DIVINO FLOOR PLAN</h2>
+                                </div>
+                            </div><!-- section title end -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="cmt-tabs cmt-tab-style-02" data-effect="fadeIn">
+                                <ul class="tabs text-center clearfix">
+                                    <li class="tab active"><a href="#">2BHK</a></li>
+                                      <li class="tab"><a href="#">2BHK + Study</a></li>
+                                    <li class="tab"><a href="#">3BHK</a></li>
+                                    <li class="tab"><a href="#">4BHK</a></li>
+                                </ul>
+                                <div class="content-tab">
+                                    <!-- content-inner -->
+                                    <div class="content-inner active" style="">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-10">
+                                                <div
+                                                    class="d-inline-block single-img-wraper p-3 cmt-bgcolor-white box-shadow">
+                                                    <img class="img-fluid" src=" assets/images/5.png" alt="image"
+                                                        height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <img class="img-fluid" src=" assets/images/4.png" alt="image"
+                                                    height="100%" width="100%">
+                                            </div>
+                                            
+                                        </div>
+                                    </div><!-- content-inner end-->
+                                    
+                                     <div class="content-inner" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-2"></div>
+                                    <div class="col-lg-7 col-md-12">
+                        <img class="img-fluid" src="assets/WhatsApp Image 2023-05-09 at 03.28.39.jpeg" alt="image"
+                                                    height="100%" width="100%">
+                                            </div>
+                                            <div class="col-lg-3"></div>
+                                        </div></div>
+                                    <!-- content-inner -->
+                                    <div class="content-inner" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-10">
+                                                <div
+                                                    class="d-inline-block single-img-wraper p-3 cmt-bgcolor-white box-shadow">
+                                                    <img class="img-fluid" src="assets/images/2.png" alt="image"
+                                                        height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="pl-20 pt-20 res-991-pl-0 res-991-pt-40">
+                                                    <h4>3BHK FLOOR PLAN </h4>
+                                                    <p>ACE Divino floor plan has different types of units that you can
+                                                        choose from as per your preference & budget.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- content-inner end-->
+                                    <!-- content-inner -->
+                                    <div class="content-inner" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-10">
+                                                <div
+                                                    class="d-inline-block single-img-wraper p-3 cmt-bgcolor-white box-shadow">
+                                                    <img class="img-fluid" src="assets/images/1.png" alt="image"
+                                                        height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="pl-20 pt-20 res-991-pl-0 res-991-pt-40">
+                                                    <h4>4BHK FLOOR PLAN </h4>
+                                                    <p>ACE Divino floor plan has different types of units that you can
+                                                        choose from as per your preference & budget.</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- content-inner end-->
+                                    <!-- content-inner -->
+                                    <div class="content-inner" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-10">
+                                                <div
+                                                    class="d-inline-block single-img-wraper p-3 cmt-bgcolor-white box-shadow">
+                                                    <img class="img-fluid"
+                                                        src="assets/images/inner_pages/tab-img-04.jpg" alt="image"
+                                                        height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="pl-20 pt-20 res-991-pl-0 res-991-pt-40">
+                                                    <h4>Car Inspection Service </h4>
+                                                    <p>We’ve built a name for ourselves providing reliable, honest and
+                                                        high quality Brake Repair services to homes all over the
+                                                        worldwide. We are great at all kind of Car Inspection.</p>
+                                                    <div class="pt-15 pb-5">
+                                                        <h3 class="cmt-textcolor-darkgrey">How it,s done:</h3>
+                                                    </div>
+                                                    <ul class="cmt-list cmt-list-style-icon">
+                                                        <li><i class="ti ti-check cmt-textcolor-darkgrey"></i><span
+                                                                class="cmt-list-li-content font-weight-normal">Our main
+                                                                core values and commitment to health and safety</span>
+                                                        </li>
+                                                        <li><i class="ti ti-check cmt-textcolor-darkgrey"></i><span
+                                                                class="cmt-list-li-content font-weight-normal">We
+                                                                endeavor to provide you with a personal clean
+                                                                tailored</span></li>
+                                                        <li><i class="ti ti-check cmt-textcolor-darkgrey"></i><span
+                                                                class="cmt-list-li-content font-weight-normal">We envy
+                                                                interview any potential cleaners in their own
+                                                                home</span></li>
+                                                    </ul>
+                                                    <div class="mt-35">
+                                                        <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-border cmt-icon-btn-right cmt-btn-color-dark"
+                                                            href="about-2.html">Learn More<i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- content-inner end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </section>
+            <section class="cmt-row grid-section clearfix"
+                style="background-image:url( assets/images/client/stacked-city-building-cityscape-skyline-business-illustration-vector.webp);" id="gallery">
+                <div class="container">
+                    <h1 style=" text-align: center; color: black;font-size: 30px;">GALLERY</h1>
+                    <div class="row row-equal-height">
+                        <div class="cmt-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-post -->
+                            <div class="featured-imagebox featured-imagebox-post style1">
+                                <div class="cmt-box-view-overlay">
+                                    <div class="cmt-post-thumbnail featured-thumbnail">
+                                        <img class="img-fluid" src="assets/images/prettyPhoto/1 (1).jpg" alt="image">
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-post end-->
+                        </div>
+                        <div class="cmt-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-post -->
+                            <div class="featured-imagebox featured-imagebox-post style1">
+                                <div class="cmt-box-view-overlay">
+                                    <div class="cmt-post-thumbnail featured-thumbnail">
+                                        <img src="assets/images/prettyPhoto/2.jpg" alt="image" class="img-fluid" style=" ">
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-post end-->
+                        </div>
+                        <div class="cmt-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-post -->
+                            <div class="featured-imagebox featured-imagebox-post style1">
+                                <div class="cmt-box-view-overlay">
+                                    <div class="cmt-post-thumbnail featured-thumbnail">
+                                        <img src="assets/images/prettyPhoto/5.jpg" alt="image" class="img-fluid" style="">
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-post end-->
+                        </div>
+                        <div class="cmt-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-post -->
+                            <div class="featured-imagebox featured-imagebox-post style1">
+                                <div class="cmt-box-view-overlay">
+                                    <div class="cmt-post-thumbnail featured-thumbnail">
+                                        <img src="assets/images/prettyPhoto/bed 1.jpeg" alt="image" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-post end-->
+                        </div>
+                        <div class="cmt-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-post -->
+                            <div class="featured-imagebox featured-imagebox-post style1">
+                                <div class="cmt-box-view-overlay">
+                                    <div class="cmt-post-thumbnail featured-thumbnail">
+                                        <img src="assets/images/prettyPhoto/g.jpeg" alt="image" class="img-fluid" style="">
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-post end-->
+                        </div>
+                        <div class="cmt-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                            <!-- featured-imagebox-post -->
+                            <div class="featured-imagebox featured-imagebox-post style1">
+                                <div class="cmt-box-view-overlay">
+                                    <div class="cmt-post-thumbnail featured-thumbnail">
+                                        <img src="assets/images/prettyPhoto/living 1.jpeg" alt="image" style="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-post end-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--grid-section end-->
+            <!-- sidebar -->
+           <section class="site-plan my-4" >
+            <div class="container">
+
+         
+            <h1 class="text-center" id="site-plan">Site Plan</h1>
+            <img src="assets/images/ace-divino-site-plan.webp" class="img-fluid" alt="">
+        </div>  
+        </section>
+            <!-- sidebar end -->
+            <section class="cmt-row grid-section clearfix" style="background-color:#f6f6f6;" id="contact">
+                <h1 style=" text-align: center; color: black;font-size: 30px;">Location Map</h1>
+                <div class="container">
+                    <div class="row row-equal-height">
+                        <div class="cmt-box-col-wrapper col-lg-6">
+                            <!-- featured-imagebox-post -->
+
+                           <img src="assets/images/prettyPhoto/location-map.jpg" class="img-fluid" alt="">
+
+
+                        </div>
+                        <div class="cmt-box-col-wrapper col-lg-6">
+                            <h3 class="m-auto" >Contact Us</h3>
+                            <form action="https://formsubmit.co/aceclusivehomes01@gmail.com" method="post">
+                                <input type="text" name="Name" placeholder="Enter Name" required>
+                                <input type="hidden" name="_autoresponse" value="thank you">
+                                <input type="email" name="Email" placeholder="Enter Email" required>
+                                  <input type="hidden" name="_subject" value="Ace divino!">
+                            <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                                <input type="number" name="Number" placeholder="Enter Number">
+                                <textarea name="Message" placeholder="type message..." id="" cols="20" rows="5" required></textarea>
+                                <button type="submit" class="btn btn-danger m-auto">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--broken-section-->
+          
+            <!--broken-section end-->
+
+        </div><!--site-main end-->
+
+        <!--footer start-->
+
+        <div class="sticky-icon">
+            <a href="tel:8178442618" class="Youtube"><i class="fa fa-phone"></i>Call Now </a>
+            <a href="https://wa.me/8178442618" target="_blank" class="Twitter"><i class="fa fa-whatsapp"></i>Whatsapp
+                Chat </a>
+        </div>
+
+        <footer class="footer cmt-bgcolor-darkgrey cmt-textcolor-white clearfix">
+
+            <div class="second-footer " style="padding-top: 3rem;">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <h2>Address:</h2>
+                            <h6><i class="fa fa-map-marker mx-2"></i>Plot no. GH-14A Sector-1, Noida Extension, Greater Noida, Uttar Pradesh 201306, India</h6>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Email:</h2>
+                            <h6><i class="fa fa-envelope mx-2"></i><a href="#"
+                                target="">info@aceclusivehomes.com</a></h6>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Call us:</h2>
+                            <h6><i class="fa fa-phone mx-2"></i>+91-81-7844-2618</h6>
+                        </div>
+                   
+                    </div>
+                </div>
+            </div>
+         
+            <div class="bottom-footer-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright text-center">
+                                <span>Copyright © 2023 Ace divino. All rights reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--footer end-->
+
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+
+    </div><!-- page end -->
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src=" assets/js/jquery-3.6.0.min.js"></script>
+    <script src=" assets/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src=" assets/js/bootstrap.min.js"></script>
+    <script src=" assets/js/jquery.easing.js"></script>
+    <script src=" assets/js/jquery-waypoints.js"></script>
+    <script src=" assets/js/jquery-validate.js"></script>
+    <script src=" assets/js/slick.min.js"></script>
+    <script src=" assets/js/imagesloaded.min.js"></script>
+    <script src=" assets/js/jquery-isotope.js"></script>
+    <script src=" assets/js/jquery.prettyPhoto.js"></script>
+    <script src=" assets/js/numinate.min.js"></script>
+    <script src=" assets/js/circle-progress.min.js"></script>
+    <script src=" assets/js/main.js"></script>
+    <!-- Revolution Slider -->
+    <script src=" assets/revolution/js/slider.js"></script>
+    <script src=' assets/revolution/js/revolution.tools.min.js'></script>
+    <script src=' assets/revolution/js/rs6.min.js'></script> <!-- Javascript end-->
+</body>
+
+</html>

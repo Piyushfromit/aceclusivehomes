@@ -108,14 +108,14 @@
 
         .slider-content {
             display: flex;
-            width: 300%;
+            width: 500%;
             height: 100%;
             background-color: #671819;
             transition: transform 0.3s ease-in-out;
         }
 
         .slider-content .testimonial {
-            flex-basis: 33.33%;
+            flex-basis: 20%;
             padding: 10px;
             text-align: center;
             padding: 50px 0px;
@@ -752,20 +752,22 @@
 
             <section class="mt-4">
 
-                <h1 class="text-center">Testimonials</h1>
+                <h1 class="text-center"></h1>
                 <div class="slider">
                     <div class="slider-content">
                         <div class="testimonial">
-                            <p>"all credit goes to aman sharma he is very cooperative and have great knowledge about the investments in real estate projects.. thanks for help me buying Ace YXP commercial project."</p>
+                            <p>"all credit goes to aman sharma he is very cooperative and have great knowledge about the
+                                investments in real estate projects.. thanks for help me buying Ace YXP commercial project."</p>
                             <div class="name">-Vikaram</div>
                         </div>
                         <div class="testimonial">
-                            <p>"smooth and clear dealing with Aman Sharma. All support and smooth direction in buying my dream home ACE Terra at yamuna expressway"</p>
+                            <p>"smooth and clear dealing with Aman Sharma. All support and smooth direction in buying 
+                                my dream home ACE Terra at yamuna expressway"</p>
                             <div class="name">-Chanchal</div>
-                        </div>
+                        </div> 
                         <div class="testimonial">
                             <p>"We bought our 1st house with Mr. Prashant. We were impressed with his patience and his
-                                attitude. He would under stand our needs and showed us the best accordingly. We could
+                                attitude. He would under stand our needs and showed us the best accordingly. <br> We could
                                 finalize things in short time.Thankyou Aceclusive Homes and Thank You Prashant."</p>
                             <div class="name">-Ajay Singh</div>
                         </div>
@@ -895,7 +897,7 @@
                 if (index > testimonials.length - 1) {
                     index = 0;
                 }
-                slider.style.transform = 'translateX(-' + index * 33.33 + '%)';
+                slider.style.transform = 'translateX(-' + index * 20 + '%)';
             }, 5000);
 
         </script>

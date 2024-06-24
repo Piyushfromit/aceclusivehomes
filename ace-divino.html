@@ -223,22 +223,24 @@
                     <!-- <img src="img/logo_gaursons.png" alt="logo Gaur City Center" style="max-width: 160px;"> -->
                     <h4 class="text-light" style="PADDING: 11PX;">Yes, I am Interested</h4>
     
-                    <form method="post" action="https://formsubmit.co/aceclusivehomes01@gmail.com" name="emf-form-1" id="emf-form-1" onsubmit="return validate();">
+                    <form action="./backend/process_form.php" method="GET">
                         <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name" required=""></div>
                         <div class="form-group">
-                              <input type="hidden" name="_autoresponse" value="thank you">
+                              <!-- <input type="hidden" name="_autoresponse" value="thank you"> -->
                             <input type="email" name="email" class="form-control" placeholder="Email" required=""></div>
-                              <input type="hidden" name="_subject" value="Ace divino!">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html">
+                              <!-- <input type="hidden" name="_subject" value="Ace divino!"> -->
+                            <!-- <input type="hidden" name="_captcha" value="false"> -->
+                            <!-- <input type="hidden" name="_template" value="table"> -->
+                            <!-- <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html"> -->
     
-                        <div class="form-group"> <input type="number" name="phone" placeholder="Mobile" class="form-control" required=""></div>
-                        <div class="form-group"> <input type="text" name="desc" placeholder="I am Interested" class="form-control" value="I am Interested" required=""></div>
+                        <div class="form-group"> <input type="number" name="phone_number" placeholder="Mobile" class="form-control" required=""></div>
+                        <div class="form-group"> <input type="text" name="message" placeholder="I am Interested" class="form-control" value="I am Interested" required=""></div>
     
     
-                        <div class="text-center my-1"><input type="submit" class="btn btn-dark btn-block" value="SUBMIT" name="Send"></div>
+                        <div class="text-center my-1"> <button type="submit" class="btn btn-danger w-100"
+                            style="margin: 3px 6px;">Submint</button></div>
                     </form>
+
                 </div>
     
             </div>
@@ -464,18 +466,22 @@
                     </h3>
 
                     <div class="frm_inner">
-                        <form action="https://formsubmit.co/aceclusivehomes01@gmail.com" method="post" name="emf-form-1-2" id="emf-form-1-2">
-                            <div class="form-group"><input type="text" name="name" id="qname" class="form-control" placeholder="Name" required=""></div>
-                            <input type="hidden" name="_subject" value="Ace divino!">
-                            <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
+                        <form action="./backend/process_form.php" method="GET">
+                            <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name" required=""></div>
                             <div class="form-group">
-                                  <input type="hidden" name="_autoresponse" value="thank you">
-                                <input type="email" name="email" id="qemail" class="form-control" placeholder="Email" required=""></div>
-                            <div class="form-group"> <input type="tel" name="phone" id="qphone" placeholder="Mobile" class="form-control" required=""></div>
-                            <div class="form-group"> <input type="text" name="desc" id="qdesc" placeholder="Hi, I am interested." class="form-control" required=""></div>
-                            <div class="text-center mt-1"><input type="submit" name="Send" class="btn btn-danger btn-block" value="SUBMIT"></div>
+                                  <!-- <input type="hidden" name="_autoresponse" value="thank you"> -->
+                                <input type="email" name="email" class="form-control" placeholder="Email" required=""></div>
+                                  <!-- <input type="hidden" name="_subject" value="Ace divino!"> -->
+                                <!-- <input type="hidden" name="_captcha" value="false"> -->
+                                <!-- <input type="hidden" name="_template" value="table"> -->
+                                <!-- <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html"> -->
+        
+                            <div class="form-group"> <input type="number" name="phone_number" placeholder="Mobile" class="form-control" required=""></div>
+                            <div class="form-group"> <input type="text" name="message" placeholder="I am Interested" class="form-control" value="I am Interested" required=""></div>
+        
+        
+                            <div class="text-center my-1"> <button type="submit" class="btn btn-danger w-100"
+                                style="margin: 3px 6px;">Submint</button></div>
                         </form>
                     </div>
 
@@ -822,16 +828,16 @@
                         </div>
                         <div class="cmt-box-col-wrapper col-lg-6">
                             <h3 class="m-auto" >Contact Us</h3>
-                            <form action="https://formsubmit.co/aceclusivehomes01@gmail.com" method="post">
-                                <input type="text" name="Name" placeholder="Enter Name" required>
-                                <input type="hidden" name="_autoresponse" value="thank you">
-                                <input type="email" name="Email" placeholder="Enter Email" required>
-                                  <input type="hidden" name="_subject" value="Ace divino!">
+                            <form action="./backend/process_form.php" method="GET">
+                                <input type="text" name="name" placeholder="Enter Name" required>
+                                <!-- <input type="hidden" name="_subject" value="Ace city!">
                             <input type="hidden" name="_next" value="https://www.aceclusivehomes.com/thanks.html">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-                                <input type="number" name="Number" placeholder="Enter Number">
-                                <textarea name="Message" placeholder="type message..." id="" cols="20" rows="5" required></textarea>
+                            <input type="hidden" name="_template" value="table"> -->
+    
+                                <input type="email" name="email" placeholder="Enter Email" required>
+                                <input type="number" name="phone_number" placeholder="Enter Number">
+                                <textarea name="message" placeholder="type message..." id="" cols="20" rows="5" required></textarea>
                                 <button type="submit" class="btn btn-danger m-auto">Submit</button>
                             </form>
                         </div>
